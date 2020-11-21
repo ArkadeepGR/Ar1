@@ -22,11 +22,13 @@
         vr-mode-ui="enabled: false"
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-        
-   
-	    <a-entity text="value: Count 3500 ;" rotation="90 0 0" scale="100 100 10"></a-entity>
+       
+	    <a-box material="color: yellow" gps-entity-place="latitude: 100; longitude: 100"/>
+
+	    <a-camera gps-camera rotation-reader simulateLatitude='100' simulateLongitude="100"></a-camera>
+   	
 	    
 
-        <a-camera gps-camera rotation-reader></a-camera>
+       
 	</a-scene>
 </body>
