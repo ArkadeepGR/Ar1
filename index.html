@@ -6,13 +6,13 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-marker preset="hiro">
-        <a-text
+        <a-entity
+          text="value: Hello World;color:yellow;"
           position="0 0 0"
           scale="1 1 1"
-          color="red"
+          color="green"
           rotate="90 0 0"
-          value="Count 340"
-        ></a-entity>
+       ></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
